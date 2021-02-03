@@ -124,9 +124,9 @@
                             <p class="l-text">language:</p>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="lr">
+                            <select class="form-control form-control-sm" name="lr">
                             <option value>any language</option>
-                            <option>2</option>
+                            <option value="lang_af">Afrikaans</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
@@ -142,9 +142,9 @@
                             <p class="l-text">region:</p>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="cr">
+                            <select class="form-control form-control-sm" name="cr">
                             <option value>any region</option>
-                            <option>2</option>
+                            <option value="countryAF">Afghanistan</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
@@ -160,12 +160,12 @@
                             <p class="l-text">last update:</p>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="as_qdr">
+                            <select class="form-control form-control-sm" name="as_qdr">
                             <option value="all">anytime</option>
-                            <option>past 24 hours</option>
-                            <option>past week</option>
-                            <option>past month</option>
-                            <option>past year</option>
+                            <option value="d">past 24 hours</option>
+                            <option value="w">past week</option>
+                            <option value="m">past month</option>
+                            <option value="y">past year</option>
                             </select>
                         </div>
                         <div class="col">
@@ -190,12 +190,12 @@
                             <p class="l-text">terms appearing:</p>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="as_occt">
+                            <select class="form-control form-control-sm" name="as_occt">
                             <option value="any">anywhere in the page</option>
-                            <option>in the title of the page</option>
-                            <option>in the text of the page</option>
-                            <option>in the URL of the page</option>
-                            <option>in links to the page</option>
+                            <option value="title">in the title of the page</option>
+                            <option value="body">in the text of the page</option>
+                            <option value="url">in the URL of the page</option>
+                            <option value="links">in links to the page</option>
                             </select>
                         </div>
                         <div class="col">
@@ -205,16 +205,16 @@
                     <!-- SafeSearch: -->
                     <div class="form-row py-2">
                         <div class="col-2">
-                            <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637479194968396889-1849549244&rd=1"><p class="l-text">SafeSearch:</p></a>
+                            <a href="https://support.google.com/websearch/answer/510"><p class="l-text">SafeSearch:</p></a>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="safe">
+                            <select class="form-control form-control-sm" name="safe">
                             <option value="images">Show explicit results</option>
                             <option value="active">Hide explicit results</option>
                             </select>
                         </div>
                         <div class="col">
-                            <p class="r-text">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637479194968396889-1849549244&rd=1">SafeSearch</a> whether to filter sexually explicit content.</p>
+                            <p class="r-text">Tell <a href="https://support.google.com/websearch/answer/510">SafeSearch</a> whether to filter sexually explicit content.</p>
                         </div>
                     </div>
                     <!-- file type: -->
@@ -223,7 +223,7 @@
                             <p class="l-text">file type:</p>
                         </div>
                         <div class="col-6">
-                            <select class="form-control form-control-sm bg-gray" id="exampleFormControlSelect1" name="as_filetype">
+                            <select class="form-control form-control-sm bg-gray" name="as_filetype">
                             <option value>any format</option>
                             <option value="pdf">2</option>
                             <option value="pd">3</option>
@@ -243,7 +243,7 @@
                     <!-- usage rights: -->
                     <div class="form-row py-2">
                         <div class="col-2">
-                            <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637479194968396889-1849549244&rd=1"><p class="l-text">usage rights:</p></a>
+                            <a href="https://support.google.com/websearch/answer/29508"><p class="l-text">usage rights:</p></a>
                         </div>
                         <div class="col-6">
                             <select class="form-control form-control-sm" id="exampleFormControlSelect1">
@@ -263,8 +263,8 @@
                         <div class="col-2">
                         </div>
                         <div class="col-6 text-right">
-                        <input name="tbs" type="hidden" value>
-                        <input type="button" type="submit" class="btn-primary px-2" value="Advanced Search"/>
+                            <input name="tbs" type="hidden" value>
+                            <input type="submit" class="btn-primary px-2" value="Advanced Search"/>
                         </div>
                     </div>
                 </form>
@@ -279,6 +279,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Footer -->
+        <div class="w-100 bottom-0 p-2 footer">
+            <span class="px-3 r-text"><a href="https://support.google.com/websearch">Help</a></span>
+            <span class="px-3 r-text"><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></span>
+            <span class="px-3 r-text"><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></span>
         </div>
     </div>
 </body>
