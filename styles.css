@@ -40,3 +40,31 @@
 .advancednav {
     background-color: #f8f9fa;
 }
+
+.title {
+    font-weight: 500;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: grey;
+}
+
+.l-text {
+    font-size: 0.9rem;
+}
+
+.r-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+}
+
+.example-text{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.form-row select{
+    background-color: #F2F2F2;
+}

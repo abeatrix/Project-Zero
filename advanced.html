@@ -30,8 +30,255 @@
         </div>
         <!-- Main -->
         <div class="w-100">
-        <h5 class="text-danger my-4 ml-5">Advanced Search</h5>
-        <hr/>
+            <h5 class="text-danger my-4 ml-5">Advanced Search</h5>
+            <hr/>
+            <!-- Title -->
+            <div class="w-75 p-5">
+                <form action="https://google.com/search" method="GET" name="f">
+                    <div class="form-row">
+                        <div class="col-2">
+                            <p class="title">Find pages with...</p>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                        <div class="col">
+                            <p class="subtitle">To do this in the search box</p>
+                        </div>
+                    </div>
+                    <!-- all these words -->
+                    <div class="form-row py-1">
+                        <div class="col-2">
+                            <p class="l-text">all these words:</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="as_q" class="form-control form-control-sm">
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Type the important words:  <span class="example-text">tricolor rat terrier</span></p>
+                        </div>
+                    </div>
+                    <div class="form-row py-1">
+                        <div class="col-2">
+                            <p class="l-text">this exact word or phrase:</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="as_epq" class="form-control form-control-sm">
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Put exact words in quotes:  <span class="example-text">"rat terrier"</span></p>
+                        </div>
+                    </div>
+                    <div class="form-row py-1">
+                        <div class="col-2">
+                            <p class="l-text">any of these words:</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="as_oq" class="form-control form-control-sm">
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Type OR between all the words you want:  <span class="example-text">miniature OR standard</span></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-2">
+                            <p class="l-text">none of these words:</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="as_eq" class="form-control form-control-sm">
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Put a minus sign just before words you don't want:  <span class="example-text">-rodent, -"Jack Russell"</span></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-2">
+                            <p class="l-text">numbers ranging from:</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="as_nlo" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-1 text-center">
+                            <p class="l-text">to</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="as_nhi" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Put 2 periods between the numbers and add a unit of measure: <span class="example-text">10..35 lb, $300..$500, 2010..2011</span></p>
+                        </div>
+                    </div>
+                    <!-- SECOND HALF -->
+                    <hr/>
+                    <div class="form-row">
+                        <div class="col">
+                            <p class="title">Then narrow your results by...</p>
+                        </div>
+                    </div>
+                    <!-- language -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">language:</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="lr">
+                            <option value>any language</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Find pages in the language that you select.</p>
+                        </div>
+                    </div>
+                    <!-- region -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">region:</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="cr">
+                            <option value>any region</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Find pages published in a particular region.</p>
+                        </div>
+                    </div>
+                    <!-- last update: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">last update:</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="as_qdr">
+                            <option value="all">anytime</option>
+                            <option>past 24 hours</option>
+                            <option>past week</option>
+                            <option>past month</option>
+                            <option>past year</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Find pages updated within the time you specify.</p>
+                        </div>
+                    </div>
+                    <!-- site or domain: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">site or domain:</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="as_sitesearch" class="form-control form-control-sm">
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Search one site (like  <span class="example-text">wikipedia.org</span> ) or limit your results to a domain like <span class="example-text">.edu, .org or .gov</span></p>
+                        </div>
+                    </div>
+                    <!-- terms appearing: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">terms appearing:</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="as_occt">
+                            <option value="any">anywhere in the page</option>
+                            <option>in the title of the page</option>
+                            <option>in the text of the page</option>
+                            <option>in the URL of the page</option>
+                            <option>in links to the page</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</p>
+                        </div>
+                    </div>
+                    <!-- SafeSearch: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637479194968396889-1849549244&rd=1"><p class="l-text">SafeSearch:</p></a>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="safe">
+                            <option value="images">Show explicit results</option>
+                            <option value="active">Hide explicit results</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637479194968396889-1849549244&rd=1">SafeSearch</a> whether to filter sexually explicit content.</p>
+                        </div>
+                    </div>
+                    <!-- file type: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <p class="l-text">file type:</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm bg-gray" id="exampleFormControlSelect1" name="as_filetype">
+                            <option value>any format</option>
+                            <option value="pdf">2</option>
+                            <option value="pd">3</option>
+                            <option value="kml">4</option>
+                            <option value="kmz">5</option>
+                            <option value="xls">5</option>
+                            <option value="ppt">5</option>
+                            <option value="doc">5</option>
+                            <option value="rtf">5</option>
+                            <option value="swf">5</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Find pages in the format you prefer.</p>
+                        </div>
+                    </div>
+                    <!-- usage rights: -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                            <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637479194968396889-1849549244&rd=1"><p class="l-text">usage rights:</p></a>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                            <option value>not filtered by license</option>
+                            <option value="f">free to use to share</option>
+                            <option value="fc">free to use to share, even commercially</option>
+                            <option value="fm">free to use to share or modify</option>
+                            <option value="fmc">free to use,share or modify, even commercially</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p class="r-text">Find pages you are free to use yourself.</p>
+                        </div>
+                    </div>
+                    <!-- BUTTON -->
+                    <div class="form-row py-2">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-6 text-right">
+                        <input name="tbs" type="hidden" value>
+                        <input type="button" type="submit" class="btn-primary px-2" value="Advanced Search"/>
+                        </div>
+                    </div>
+                </form>
+                <hr/>
+                <div>
+                    <p>You can also...</p>
+                    <div class="m-2">
+                    <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en"><p class="p-0 m-0" >Find pages that are similar to a URL</p></a>
+                    <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en"><p class="p-0 m-0" >Search pages you've visited</p></a>
+                    <a href="https://support.google.com/websearch?p=adv_operators&hl=en"><p class="p-0 m-0" >Use operators in the search box</p></a>
+                    <a href="https://www.google.com/preferences?hl=en"><p class="p-0 m-0" >Customize your search settings</p></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
