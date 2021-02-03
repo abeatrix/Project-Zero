@@ -1,0 +1,42 @@
+.main {
+    margin-top: 12%;
+}
+.gform{
+    width: 30%;
+    height: 50px;
+    border-color: gray;
+    margin-bottom: 2%;
+}
+
+.gform:hover{
+    box-shadow: 0 0 3px grey;
+    padding-left: 3%;
+}
+
+.searchbtn {
+    background-color: #F8F9FA;
+    border-style: none;
+}
+
+.inputform i{
+    position: absolute;
+}
+
+.icon {
+    padding: 15px;
+    min-width: 50px;
+    color: grey;
+}
+
+.glogo span{
+    position: absolute;
+}
+.glogotext{
+    padding-top:70px;
+    padding-left: 220px;
+    color: #4285F3;
+}
+
+.advancednav {
+    background-color: #f8f9fa;
+}
