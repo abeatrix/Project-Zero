@@ -57,23 +57,14 @@
     margin-top: 200px;
 }
 
-.glogo span{
-    position: absolute;
-}
-.glogotext{
-    padding-top:70px;
-    padding-left: 220px;
-    color: #4285F3;
-}
-
 .form-row select{
     background-color: #F2F2F2;
 }
 
 .footer {
     background-color: #F2F2F2;
+    font-size: 12px;
 }
-
 
 .footer a{
     font-size: 12px;
@@ -84,6 +75,19 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+/* images */
+/* add text "image" to logo */
+.glogo span{
+    position: absolute;
+}
+
+.glogotext{
+    padding-top:70px;
+    padding-left: 220px;
+    color: #4285F3;
+}
+
 
 /* advanced */
 .advancednav {
@@ -131,8 +135,21 @@
 }
 
 @media (max-width: 800px) {
+    .gform {
+        min-width: 90%;
+    }
     .advancedtable {
         min-width: 550px;
     }
+    .footer div{
+        width: 100%;
+    }
+    .footer {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer :nth-child(1) { order: 2; text-align: center; height: 46px;}
+    .footer :nth-child(2) { order: 1; text-align: center; height: 46px}
+    .footer :nth-child(3) { order: 3; text-align: center; height: 20px}
 
 }
