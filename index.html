@@ -16,24 +16,24 @@
 </head>
 
 <body>
-    <div class="flex p-2 vw-100 vh-100">
+    <div class="flex p-0 vw-100 vh-100">
         <!-- Navbar -->
-        <div class="sticky-top w-100 d-flex justify-content-between p-3">
-            <div>
+        <div class="sticky-top w-100 d-flex justify-content-between p-3 gnav">
+            <div class="d-flex align-items-center">
                 <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="mx-2">About</a>
                 <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="mx-2">Store</a>
             </div>
-            <div class="d-inline">
+            <div class="d-flex align-items-center">
                 <a href="https://gmail.com" class="mx-2">Gmail</a>
-                <a href="./advanced.html" class="mx-2">Advanced Search</a>
                 <a href="./image.html" class="mx-2">Images</i></a>
-                <a href="https://about.google/intl/en/products/" class="mx-2"><i class="fas fa-bars"></i></a>
-                <a href="https://accounts.google.com/ServiceLogin" class="mx-2"><button type="button" class="btn btn-primary px-4">Sign In</button></a>
+                <a href="./advanced.html" class="mx-2">Advanced Search</a>
+                <a href="https://about.google/intl/en/products/" class="mx-3"><i class="fas fa-bars"></i></a>
+                <a href="https://accounts.google.com/ServiceLogin" class="mx-2"><button type="button" class="btn btn-primary px-3">Sign In</button></a>
             </div>
         </div>
         <!-- Main -->
         <div class="w-100 main text-center">
-            <img class="pb-4" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+            <img class="pb-4 glogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
             <form action="https://google.com/search" class="inputform" id="normalsearch">
                 <i class="fa fa-search icon"></i>
                 <input type="text" name="q" class="rounded-pill gform border border-gray">
@@ -46,10 +46,9 @@
             </div>
         </div>
         <!-- Footer -->
-        <div class="w-100 fixed-bottom p-2 footer">
+        <div class="w-100 fixed-bottom p-3 footer">
             <span class="px-3 r-text">Advertising</span>
             <span class="px-3 r-text">Business</span>
-            <span class="px-3 r-text">About</span>
             <span class="px-3 r-text">How Search works</span>
         </div>
 
